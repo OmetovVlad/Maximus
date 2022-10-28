@@ -1,0 +1,58 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
+
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 56px 0 0;
+}
+
+.ps{
+    padding: 30px 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    h1{
+        font-family: pico;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-family: VinSlabPro;
+        font-style: italic;
+    }
+    figure{
+        display: block;
+        padding: 15px;
+        margin-bottom: 30px;
+        background-color: #fff;
+        max-width: 900px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 11px 9px 10px 5px rgb(51 51 51 / 30%);
+        img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        figcaption{
+            font-family: ua;
+            display: block;
+            text-align: center;
+            padding: 15px 0 0;
+        }
+    }
+    h4{
+        font-weight: 400;
+        a{
+            font-style: italic;
+            font-weight: 600;
+            color: #3498db;
+            text-decoration: none;
+            transition: all 0.25s;
+            opacity: 1;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+}
