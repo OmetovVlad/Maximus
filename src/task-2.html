@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html', {
+        "title":"Maximus::Тестовое задание #2"
+    })
+    <body>
+        @@include('html/header.html')
+        <div class="container">
+            <div class="task task-2">
+                <div class="wrapper">
+                    <h1>Задание #2</h1>
+                    <h3>Модальное окно</h3>
+                    <p>Реализовано на Bootstrap 5 с фишечной 😅</p>
+                    <p>Да, курсор в input`е не видно, нюанс трансформаций. <br>Он там есть, но из-за смены углов он тсановится не видимым. <br>Надеюсь, что это не критично</p>
+                    <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="cb_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>Заказать консультацию</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal custom_design fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content js-tilt">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title fs-5">
+                            Заказать консультацию
+                        </h1>
+
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="input-text">
+                                        <span>Имя:</span>
+                                        <input type="text" name="name" placeholder="Ваше имя">
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                    <label class="input-text">
+                                        <span>Телефон:</span>
+                                        <input type="text" name="Телефон" placeholder="+7 (9**) ***-**-**" class="tel">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-sm-end">
+                                <div class="col-12 col-md-6 mt-3 mt-md-3">
+                                    <span class="privat">Нажимая кнопку "Заказать" вы подтверждаете всякие вещи!</span>
+                                </div>
+                                <div class="col-12 col-md-6 mt-3 mt-md-3">
+                                    <button type="submit" class="send_btn"><span>Заказать!</span></button>
+                                </div>
+                            </div>
+                        
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

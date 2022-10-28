@@ -17,7 +17,6 @@ export const scss = () => {
                 message: "Error: <%= error.message %>"
             })
         ))
-        .pipe(app.plugins.replace(/@img\//g, '../img/'))
         .pipe(sass({
             outputStyle: 'expanded'
         }))
@@ -26,6 +25,7 @@ export const scss = () => {
             webpClass: ".webp",
             noWebpClass:".no-webp"
         }))
+        .pipe(app.plugins.replace(/@img\//g, '../img/'))
         .pipe(autoprefixer({
             grid: true,
             overrideBrowserslist: ["last 3 versions"],

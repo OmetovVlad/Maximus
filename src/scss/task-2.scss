@@ -1,0 +1,166 @@
+.task{
+    &-2{
+        @media (min-width: 576px){
+            background-image: url("@img/task2_bg.png")!important;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        @media (min-width: 992px){
+            background-size: initial;
+        }
+        background-color: #333!important;
+        color: #fff;
+    }
+    .cb_button{
+        display: block;
+        margin: 60px auto 30px;
+        font-family: ua;
+        display: block;
+        background: initial;
+        border: 0;
+        padding: 18px 25px;
+        color: #000;
+        border-radius: 25px;
+        text-align: center;
+        transition: all 0.25s;
+        position: relative;
+        overflow: hidden;
+        span{
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1;
+            position: relative;
+            z-index: 1;
+            color:#fe0;
+            transition: all 0.25s;
+        }
+        &::before{
+            content: "";
+            background: #fe0;
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(25deg);
+            width: 100%;
+            height: 0;
+            transition: all 0.5s;
+            z-index: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border: 3px solid #fe0;
+            border-radius: 25px;
+            transition: all 0.5s;
+        }
+        &:hover{
+            &::before{
+                height: 500%;
+            }
+            span{
+                color: #000;
+            }
+        }
+        &:active{
+            &::after{
+                border-color: #ffac0b;
+            }
+            &::before{
+                background: #ffac0b;
+            }
+        }
+    }
+}
+
+.modal{
+    &.custom_design{
+        .modal-dialog{
+            max-width: 600px;
+            .modal-content{
+                background: #fe0;
+                background: linear-gradient(328deg, #ffac0b 0%, #fe0 100%);
+                border-radius: 0;
+                border: 0;
+                box-shadow: none;
+                .modal-body{
+                    position: relative;
+                    margin: 30px;
+                    background: #fff;
+                    .btn-close{
+                        position: absolute;
+                        top: -25px;
+                        right: -25px;
+                        filter: invert(1);
+                        opacity: 1;
+                    }
+                    h1{
+                        margin-bottom: 20px;
+                    }
+                    .input-text{
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        span{
+                            position: absolute;
+                            left: 10px;
+                            font-size: 10px;
+                            line-height: 1;
+                            padding: 3px 5px;
+                            text-transform: uppercase;
+                            color: #444;
+                            font-weight: 600;
+                            letter-spacing: 0.75px;
+                            background-color: #fff;
+                            transform: translate(0, -50%);
+                        }
+                        input[type=text]{
+                            display: block;
+                            width: 100%;
+                            border: 1px solid #ccc;
+                            padding: 7px 13px;
+                        }
+                    }
+                    .privat{
+                        color: #898989;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        display: block;
+                        @media (min-width: 768px){
+                            margin-top: 7px;
+                        }
+                    }
+                    .send_btn{
+                        font-family: ua;
+                        display: block;
+                        border: 0;
+                        background: #fe0;
+                        padding: 15px;
+                        width: 100%;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 1;
+                        padding: 18px 25px;
+                        color: #000;
+                        border-radius: 0px;
+                        text-align: center;
+                        transition: all 0.25s;
+                        &:hover{
+                            background: #ffc44e;
+                        }
+                        &:active{
+                            background: #ffac0b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
