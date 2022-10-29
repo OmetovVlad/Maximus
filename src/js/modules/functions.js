@@ -59,5 +59,6 @@ import VanillaTilt from 'vanilla-tilt';
 
 VanillaTilt.init(document.querySelector(".js-tilt"), {
 	max: 5,
-	speed: 400
+	speed: 400,
+	gyroscope: true
 });

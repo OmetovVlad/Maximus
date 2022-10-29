@@ -1,3 +1,10 @@
+@media (max-width: 967px){
+    .js-tilt{
+        transform: inherit !important;
+    }
+}
+
+
 .task{
     &-2{
         @media (min-width: 576px){

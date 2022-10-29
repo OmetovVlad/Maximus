@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html', {
-        "title":"Maximus::Тестовое задание"
+        "title": "Maximus::Тестовое задание"
     })
     <body>
-        @@include('html/header.html')
+        @@include('html/header.html', {
+            "index": "active",
+            "task1": "",
+            "task2": "",
+            "task3": "",
+            "task4": ""
+        })
         <div class="container">
             @@include('html/hello.html')
         </div>
