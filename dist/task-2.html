@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximus::Тестовое задание #2</title>
+    <link rel="stylesheet" href="css/style.min.css?_v=20221030221423">
+</head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">MAXIMUS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link @@task1" href="/">Задание #1 🔘</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/task-2.html">Задание #2 📁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @@task3" href="/task-3.html">Задание #3 📑</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link @@task4" href="/task-4.html">Задание #4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+        <div class="container">
+            <div class="task task-2">
+                <div class="wrapper">
+                    <h1>Задание #2</h1>
+                    <h3>Модальное окно</h3>
+                    <p>Реализовано на Bootstrap 5 с фишечной 😅</p>
+                    <p>Да, курсор в input`е не видно, нюанс трансформаций. <br>Он там есть, но из-за смены углов он становится не видимым. <br>Надеюсь, что это не критично</p>
+                    <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="cb_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <span>Заказать консультацию</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal custom_design fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content js-tilt">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="modal-title fs-5">
+                            Заказать консультацию
+                        </h1>
+
+                        <form action="">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <label class="input-text">
+                                        <span>Имя:</span>
+                                        <input type="text" name="name" placeholder="Ваше имя">
+                                    </label>
+                                </div>
+                                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                                    <label class="input-text">
+                                        <span>Телефон:</span>
+                                        <input type="text" name="Телефон" placeholder="+7 (9**) ***-**-**" class="tel">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="row justify-content-sm-end">
+                                <div class="col-12 col-md-6 mt-3 mt-md-3">
+                                    <span class="privat">Нажимая кнопку "Заказать" вы подтверждаете всякие вещи!</span>
+                                </div>
+                                <div class="col-12 col-md-6 mt-3 mt-md-3">
+                                    <button type="submit" class="send_btn"><span>Заказать!</span></button>
+                                </div>
+                            </div>
+                        
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/app.min.js?_v=20221030221423"></script>
+    </body>
+</html>
