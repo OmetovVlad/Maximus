@@ -1,7 +1,28 @@
 @font-face {
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: Gilroy;
+	font-display: swap;
+	src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
 	font-family: pico;
 	font-display: swap;
 	src: url("../fonts/pico-8.woff2") format("woff2"), url("../fonts/pico-8.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: ua;
+	font-display: swap;
+	src: url("../fonts/ua-BRAND-regular.woff2") format("woff2"), url("../fonts/ua-BRAND-regular.woff") format("woff");
 	font-weight: 400;
 	font-style: normal;
 }
@@ -23,7 +44,7 @@
 	font-family: VinSlabPro;
 	font-display: swap;
 	src: url("../fonts/VinSlabPro-Light_0.woff2") format("woff2"), url("../fonts/VinSlabPro-Light_0.woff") format("woff");
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face {
@@ -32,11 +53,4 @@
 	src: url("../fonts/VinSlabPro-LightItalic.woff2") format("woff2"), url("../fonts/VinSlabPro-LightItalic.woff") format("woff");
 	font-weight: 400;
 	font-style: italic;
-}
-@font-face {
-	font-family: ua;
-	font-display: swap;
-	src: url("../fonts/ua-BRAND-regular.woff2") format("woff2"), url("../fonts/ua-BRAND-regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
 }

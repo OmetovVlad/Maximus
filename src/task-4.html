@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html', {
-        "title":"Maximus::Тестовое задание #2"
+        "title":"Maximus::Тестовое задание #3"
     })
     <body>
         @@include('html/header.html', {
-            "task2": "active"
+            "task4": "active"
         })
-        <div class="container">
-            <div class="task task-2">
-                <div class="wrapper">
-                    <h1>Задание #2</h1>
-                    <h3>Модальное окно</h3>
-                    <p>Реализовано на Bootstrap 5 с фишечной 😅</p>
-                    <p>Да, курсор в input`е не видно, нюанс трансформаций. <br>Он там есть, но из-за смены углов он становится не видимым. <br>Надеюсь, что это не критично</p>
-                    <div>
-                        <!-- Button trigger modal -->
+        
+
+        <section class="banner">
+            <div class="shapes paralax">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="light">
+                <div></div>
+                <!-- <div class="orange"><div></div></div>
+                <div class="yellow"><div></div></div> -->
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-9">
+                        <h1>Первые заявки из контекстной рекламы уже через 7 дней!</h1>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <span class="deskr">Повышаем продажи, а не просто настраиваем <br>контекстную рекламу</span>
+                    </div>
+                    <div class="col-12 col-lg-7">
                         <button type="button" class="cb_button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <span>Заказать консультацию</span>
+                            <span>Оставить заявку</span>
                         </button>
                     </div>
-
+                    <div class="col-12">
+                        <div class="gift">
+                            <div class="block">
+                                <button type="button" class="black" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span>Оставьте заявку</span>
+                                </button>
+                                <div class="white">
+                                    <span>Получи подарок</span>
+                                    <span>— часовая консультация маркетолога</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- Modal -->
         <div class="modal custom_design fade" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -66,6 +90,7 @@
                 </div>
             </div>
         </div>
+        
         <script src="js/app.min.js"></script>
     </body>
 </html>

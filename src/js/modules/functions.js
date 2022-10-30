@@ -54,6 +54,61 @@ export function phoneMask(){
 	});
 }
 
+export function parallax(){
+	
+	window.onload = function() {
+	const parallax = document.querySelector('.parallax')
+
+	if (parallax) {
+		const orange = document.querySelector('.orange div');
+		const yellow = document.querySelector('.yellow div');
+
+		const shape1 = document.querySelector('.shape-1');
+		const shape2 = document.querySelector('.shape-2');
+
+		const forOrange = 20;
+		const forYellow = 10;
+
+		const forShape1 = 20;
+		const forShape2 = 15;
+
+		const speed = 0.75;
+
+		let positionX = 0, positionY = 0;
+		let coordXpercent = 0, coordYpercent = 0;
+
+		function setMouseParallaxStyle() {
+			const distX = coordXpercent - positionX;
+			const distY = coordYpercent - positionY;
+
+			positionX = positionX + (distX * speed);
+			positionY = positionY + (distY * speed);
+
+			orange.style.cssText = `transform: translate(${-positionX / forOrange}%, 0);`;
+			yellow.style.cssText = `transform: translate(${positionX / forYellow}%, 0);`;
+			
+			shape1.style.cssText = `transform: translate(${-positionX / forShape1}%,${-positionY / forShape1}%);`;
+			shape2.style.cssText = `transform: translate(${positionX / forShape2}%,${positionY / forShape2}%);`;
+
+			requestAnimationFrame(setMouseParallaxStyle);
+		}
+		setMouseParallaxStyle();
+
+		parallax.addEventListener('mousemove', function(e) {
+			const parallaxWidth = parallax.offsetWidth;
+			const parallaxHeight = parallax.offsetHeight;
+
+			const coordX = e.pageX - parallaxWidth / 2;
+			const coordY = e.pageY - parallaxHeight / 2;
+
+			coordXpercent = coordX / parallaxWidth * 100;
+			coordYpercent = coordY / parallaxHeight * 100;
+		});
+	}
+	}	  
+
+}
+
 import * as bootstrap from 'bootstrap';
 import VanillaTilt from 'vanilla-tilt';
 
